@@ -2,10 +2,14 @@ import React from 'react'
 import Todo from './todo'
 import PropTypes from 'prop-types'
 
-const TodoList = ({todoIsDone, todos, todoIsDoing}) => (
+const TodoList = ({todoIsDone, todos, todoIsDoing, removeTodo}) => (
     <ul>
       {todos.map(todo =>
-        <Todo key= { todo.id } {...todo} isDoing={ () => todoIsDoing(todo.id)} finishedTodo= {() => todoIsDone(todo.id) }/>
+        <Todo key= { todo.id } {...todo}
+          isDoing={ () => todoIsDoing(todo.id)}
+          finishedTodo= {() => todoIsDone(todo.id)}
+          removeTodo= {() => removeTodo(todo.id)}
+        />
       )}
     </ul>
   )

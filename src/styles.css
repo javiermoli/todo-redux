@@ -1,0 +1,55 @@
+.container-todos {
+  display: grid;
+  grid-template-columns: 260px 58px 58px ;
+  grid-column-gap: 5px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.remove-glyphicon {
+  color: red;
+  font-size: 20px;
+}
+
+.todo-li:hover {
+  color: #a94442 !important;
+  background-color: #f2dede;
+}
+
+.todo-li:active {
+  color:black !important;
+}
+
+.button-doing {
+  transition-property: font-size !important;
+  transition-duration: 4s !important;
+  transition-delay: 2s !important;
+}
+
+.button-doing:active {
+  border-color: green !important;
+  border-width: 2px !important;
+}
+
+.header-todo-container {
+  width: 500px;
+  align-items: center;
+  text-align: center;
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: 200px 65px;
+  grid-column-gap: 10px;
+  margin-top: 10px;
+  margin-left: 112.5px;
+}
+
+.container-todos li.list-group-item {
+  cursor: pointer;
+}
+
+.filter-buttons-container {
+  margin-left: 130px;
+  width: 239px;
+}

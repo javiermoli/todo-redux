@@ -1,4 +1,4 @@
-import FilterTodos from './filterTodos'
+import FilterTodos from '../components/filterTodos'
 import { connect } from 'react-redux'
 import { changeFilter } from '../actions/actionsCreators'
 

@@ -1,5 +1,8 @@
 .App {
-  text-align: center;
+  display: grid !important;
+  grid-auto-columns:700px !important;
+  width: 700px;
+  grid-row-gap: 15px;
 }
 
 .App-logo {

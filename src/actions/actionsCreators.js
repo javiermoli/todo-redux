@@ -7,9 +7,9 @@ export const addTodo = (text) => {
   }
 }
 
-export const removeTodo = (id) => {
+export const completedTodo = (id) => {
   return {
-    type: 'REMOVE_TODO',
+    type: 'COMPLETED_TODO',
     id
   }
 }
@@ -25,6 +25,13 @@ export const changeFilter = (filter, disabled) => {
 export const todoIsDoing = (id) => {
   return {
     type: 'DOING_TODO',
+    id
+  }
+}
+
+export const removeTodo = id => {
+  return {
+    type: 'REMOVE_TODO',
     id
   }
 }

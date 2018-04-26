@@ -1,4 +1,4 @@
-import TodoList from './todoList'
+import TodoList from '../components/todoList'
 import { connect } from 'react-redux'
 import { completedTodo, todoIsDoing, removeTodo }  from '../actions/actionsCreators'
 
